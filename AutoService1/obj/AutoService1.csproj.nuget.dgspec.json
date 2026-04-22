@@ -1,0 +1,110 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/student/RiderProjects/AutoService1/AutoService1/AutoService1.csproj": {}
+  },
+  "projects": {
+    "/home/student/RiderProjects/AutoService1/AutoService1/AutoService1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/student/RiderProjects/AutoService1/AutoService1/AutoService1.csproj",
+        "projectName": "AutoService1",
+        "projectPath": "/home/student/RiderProjects/AutoService1/AutoService1/AutoService1.csproj",
+        "packagesPath": "/home/student/.nuget/packages/",
+        "outputPath": "/home/student/RiderProjects/AutoService1/AutoService1/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/student/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "/home/student/.dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Avalonia": {
+              "target": "Package",
+              "version": "[11.3.4, )"
+            },
+            "Avalonia.Desktop": {
+              "target": "Package",
+              "version": "[11.3.4, )"
+            },
+            "Avalonia.Diagnostics": {
+              "target": "Package",
+              "version": "[11.3.4, )"
+            },
+            "Avalonia.Fonts.Inter": {
+              "target": "Package",
+              "version": "[11.3.4, )"
+            },
+            "Avalonia.Themes.Fluent": {
+              "target": "Package",
+              "version": "[11.3.4, )"
+            },
+            "CommunityToolkit.Mvvm": {
+              "target": "Package",
+              "version": "[8.2.1, )"
+            },
+            "HotChocolate.Language.SyntaxTree": {
+              "target": "Package",
+              "version": "[16.0.0-rc.1.21, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[11.0.0-preview.2.26159.112, )"
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[2.5.0, )"
+            },
+            "Serilog.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/student/.dotnet/sdk/9.0.304/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:views="clr-namespace:AutoService1.ViewModels"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="AutoService1.Views.ReceiptWindow"
+        x:DataType="views:ReceiptWindowViewModel"
+        Title="ReceiptWindow">
+  <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+      <TextBlock Text="{Binding Username}"/>
+      <TextBlock Text="{Binding Car}"/>
+      <TextBlock Text="{Binding Price}"/>
+      <TextBlock Text="{Binding  Discount}"/>
+      <TextBlock Text="{Binding  TotalPrice}"/>
+      <Button Command="{Binding  SaveDB}" HorizontalAlignment="Center" VerticalAlignment="Center">Сохранить в базе данных</Button>
+      <Button Command="{Binding Start }" HorizontalAlignment="Center" VerticalAlignment="Center">Новый заказ</Button>
+      </StackPanel>
+</Window>
