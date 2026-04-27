@@ -12,12 +12,13 @@ namespace AutoService1.Views;
 
 public partial class MainWindowViewModel : ViewModelBase
 {
+    private readonly IServiceProvider _serviceProvider;
     private readonly IServiceProvider _provider;
-    [ObservableProperty] string username; 
+    [ObservableProperty] string username;
     [ObservableProperty] List<Service> _serviceList;
     [ObservableProperty] Service selectedService;
     [ObservableProperty] string car;
-     
+
     public MainWindowViewModel(IServiceProvider provider, ServiceRepository repository)
     {
         _provider = provider;
@@ -40,10 +41,22 @@ public partial class MainWindowViewModel : ViewModelBase
         win.Show();
         close();
     }
+
     private Action close;
-    public void SetClose(Action close)
-    {
-        this.close = close; 
-    }
+  
+      public void SetClose(Action close)
+      {
+          this.close = close;
+      }
+      
+      
+      [RelayCommand]
+      public void OpenPassword()
+      {
+          var win = new PasswordWindow();
+          win.Show();
+          close();
+      }
     
+      
 }

@@ -23,7 +23,7 @@
         </PackageReference>
         <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.1"/>
         <PackageReference Include="HotChocolate.Language.SyntaxTree" Version="16.0.0-rc.1.21" />
-        <PackageReference Include="Microsoft.Extensions.Hosting" Version="11.0.0-preview.2.26159.112" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.0" />
         <PackageReference Include="MySqlConnector" Version="2.5.0" />
         <PackageReference Include="Serilog.Extensions.Hosting" Version="10.0.0" />
     </ItemGroup>

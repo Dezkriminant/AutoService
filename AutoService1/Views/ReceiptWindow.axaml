@@ -14,6 +14,6 @@
       <TextBlock Text="{Binding  Discount}"/>
       <TextBlock Text="{Binding  TotalPrice}"/>
       <Button Command="{Binding  SaveDB}" HorizontalAlignment="Center" VerticalAlignment="Center">Сохранить в базе данных</Button>
-      <Button Command="{Binding Start }" HorizontalAlignment="Center" VerticalAlignment="Center">Новый заказ</Button>
+      <Button Command="{Binding  Start }" HorizontalAlignment="Center" VerticalAlignment="Center">Новая запись</Button>
       </StackPanel>
 </Window>

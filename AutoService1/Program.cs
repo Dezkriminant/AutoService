@@ -1,4 +1,4 @@
-﻿﻿using Avalonia;
+﻿using Avalonia;
 using System;
 using AutoService1.DB;
 using AutoService1.ViewModels;
@@ -34,11 +34,13 @@ sealed class Program
                 s.AddTransient<ServiceRepository>();
                 s.AddTransient<WorkRepository>();
                 s.AddTransient<WorkWindowViewModel>();
-                s.AddTransient< WorkWindow>();
+                s.AddTransient<WorkWindow>();
                 s.AddTransient<ReceiptWindow>();
                 s.AddTransient<ReceiptWindowViewModel>();
-                
-               
+                s.AddTransient<PasswordWindowViewModel>();
+                s.AddTransient<PasswordWindow>();
+                s.AddTransient<AdminWindowViewModel>();
+                s.AddTransient<AdminWindow>();
             }).
             Build();
         BuildAvaloniaApp(host.Services)

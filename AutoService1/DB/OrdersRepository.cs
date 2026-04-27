@@ -13,12 +13,11 @@ public class OrderRepository
         connection = new MySqlConnection(connect.Value.ConnectionString);
     }
 
-
     public void InsertOrder(Order order, List<Work> works)
     {
-        var sql1 = "INSERT INTO auto_service_db.orders (id, client_name, car_model, service_id, total_amount, discount_percent, order_date) VALUES (0, @client_name, @car_model, @service_id, @total_amount, @discount_percent, @order_date); ";
-        var sql2 = "SELECT max(id) as id FROM auto_service_db.orders;";
-        var sql3 = "INSERT INTO auto_service_db.order_items (order_id, work_id, work_price) VALUES (@order_id, @work_id, @work_price); ";
+        var sql1 = "INSERT INTO Frolof_and_Snigirev.orders (id, client_name, car_model, service_id, total_amount, discount_percent, order_date) VALUES (0, @client_name, @car_model, @service_id, @total_amount, @discount_percent, @order_date); ";
+        var sql2 = "SELECT max(id) as id FROM Frolof_and_Snigirev.orders;";
+        var sql3 = "INSERT INTO Frolof_and_Snigirev.order_items (order_id, work_id, work_price) VALUES (@order_id, @work_id, @work_price); ";
 
         connection.Open();
         using var transaction = connection.BeginTransaction();
@@ -60,7 +59,6 @@ public class OrderRepository
                     mc.ExecuteNonQuery();
                 }
             }
-
             transaction.Commit();
             connection.Close();
         }
@@ -69,8 +67,5 @@ public class OrderRepository
             transaction.Rollback();
             connection.Close();
         }
-        
     }
-    
-    
 }

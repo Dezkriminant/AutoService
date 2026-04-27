@@ -17,13 +17,15 @@
         
         <TextBox Text="{Binding Username}"/>
         
-        <TextBlock Text="Выбери марку машины" />
+        <TextBlock Text="Введите Фамилию" />
         <TextBox Text="{Binding Car}"/>
         <ComboBox ItemsSource="{Binding ServiceList}"
                   SelectedItem="{Binding SelectedService}"
                   DisplayMemberBinding="{Binding Title}"/>
-        <Button Content="Перейти к работам" 
+        <Button Content="Далее" 
                 Command="{Binding StartTestCommand}"/>
+             <Button Content="Включить режим администратора" 
+                            Command="{Binding OpenPasswordCommand}"/>
     </StackPanel>
 
 </Window>
