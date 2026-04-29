@@ -20,23 +20,23 @@ public partial class PasswordWindowViewModel : ViewModelBase
     [ObservableProperty] Service selectedService;
     [ObservableProperty] string car;
     [ObservableProperty] private string _password = " ";
-    [ObservableProperty]private string _error = " ";
+    [ObservableProperty] private string _error = " ";
     
-    public PasswordWindowViewModel(IServiceProvider provider, ServiceRepository repository, string password , string error)
+    public PasswordWindowViewModel(IServiceProvider provider, ServiceRepository repository)
     {
         _provider = provider;
-        _serviceList = repository.GetServicesByTest();
-        _password = password;
-        _error = error;
+        _serviceList = repository.GetServicesByTest(); 
+        //    _password = password;
+        //  _error = error;
     }
 
     
     [RelayCommand]
     public void Start()
     {
-        if (SelectedService == null)
+          if (SelectedService == null)
             return;
-        var vm = ActivatorUtilities.CreateInstance<AdminWindowViewModel>(
+          var vm = ActivatorUtilities.CreateInstance<AdminWindowViewModel>(
             _provider,
             SelectedService,
             Username,

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="AutoService1/App.axaml" value="AutoService1/AutoService1.csproj" />
+        <entry key="AutoService1/Views/AdminWindow.axaml" value="AutoService1/AutoService1.csproj" />
+        <entry key="AutoService1/Views/MainWindow.axaml" value="AutoService1/AutoService1.csproj" />
+        <entry key="AutoService1/Views/PasswordWindow.axaml" value="AutoService1/AutoService1.csproj" />
+        <entry key="AutoService1/Views/ReceiptWindow.axaml" value="AutoService1/AutoService1.csproj" />
+        <entry key="AutoService1/Views/WorkWindow.axaml" value="AutoService1/AutoService1.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

@@ -53,7 +53,10 @@ public partial class MainWindowViewModel : ViewModelBase
       [RelayCommand]
       public void OpenPassword()
       {
-          var win = new PasswordWindow();
+          var vm = _provider.GetRequiredService<PasswordWindowViewModel>();
+          var win = _provider.GetRequiredService<PasswordWindow>();
+        //  vm.SetClose(win.Close);
+          win.DataContext = vm;
           win.Show();
           close();
       }
