@@ -54,12 +54,22 @@ public partial class PasswordWindowViewModel : ViewModelBase
         }
     }
 
+    private Action close;
+    
+    public void SetClose(Action close)
+    {
+        this.close = close;
+    }
+    
     [RelayCommand]
     public void Close()
     {
-        var vm = _serviceProvider.GetRequiredService<MainWindowViewModel>();
-        var win = _serviceProvider.GetRequiredService<MainWindow>();
+        var vm = _provider.GetRequiredService<MainWindowViewModel>();
+        var win = _provider.GetRequiredService<MainWindow>();
         win.DataContext = vm;
         vm.SetClose(win.Close);
+        win.DataContext = vm;
+        win.Show();
+        close();
     }
 }

@@ -40,7 +40,9 @@ public partial class App : Application
             win.DataContext = vm;
             desktop.MainWindow = win;
             vm.SetClose(win.Close);
-        }
+            
+        } 
+        
         base.OnFrameworkInitializationCompleted();
     }
 
