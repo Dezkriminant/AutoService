@@ -55,7 +55,7 @@ public partial class MainWindowViewModel : ViewModelBase
       {
           var vm = _provider.GetRequiredService<PasswordWindowViewModel>();
           var win = _provider.GetRequiredService<PasswordWindow>();
-        //  vm.SetClose(win.Close);
+          vm.SetClose(win.Close);
           win.DataContext = vm;
           win.Show();
           close();

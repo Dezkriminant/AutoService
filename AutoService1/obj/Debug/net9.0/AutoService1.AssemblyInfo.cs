@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AutoService1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9c95743c222e246ca386277c022684b476e38556")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7aa5d5ca2b75de0133f9d4b55bd8ed84b67ac262")]
 [assembly: System.Reflection.AssemblyProductAttribute("AutoService1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AutoService1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
